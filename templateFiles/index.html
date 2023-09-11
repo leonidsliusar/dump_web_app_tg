@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href='/static/styles.css'/>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+<div>
+    <input type="text" id="first">
+    <input type="text" id="second">
+    <div id="result"></div>
+</div>
+<button id="plusButton" class="btn" onclick=func()>plus</button>
+<button id="closeButton" class="btn" onclick="closeApp()">close app</button>
+<div class="main_menu">
+    <button id="add_cart" onclick='add_cart({"price": 500, "id": "burger"})'>
+    <img src="https://images.squarespace-cdn.com/content/v1/5ec1febb58a4890157c8fbeb/19ebb9ed-4862-46e1-9f7c-4e5876730227/Beetroot-Burger.jpg">
+        500₽
+    </button>
+</div>
+<script>
+const WebApp = window.Telegram.WebApp;
+</script>
+<script src='/static/script.js'></script>
+</body>
+</html>
